@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Find your Dream Home</title>
     <script>
         // tailwind.config.js
@@ -14,7 +15,7 @@
                 extend: {
                     colors: {
                      'myColor': '#DDC7BB',
-                     'rectangle87':'#FBF5F1'
+                     'rectangle87':'#FBF5F1',
                      },
                 },
              },
@@ -28,16 +29,44 @@
 
 
 <body>
-    <div class="grid grid-cols-[40%_60%] items-center px-12 py-6 bg-[#FEF7F2] z-0">
+
+    
+<!--Hero-->
+    <div class="grid grid-cols-[40%_60%] items-center px-12 py-6 bg-[#FEF7F2] z-0 ">
         <div class="transform translate-y-[-140px]">
         <h1 class="text-[70px] font-extrabold mb-8 leading-tight text-[#2B1B12]">Find Your Dream Home</h1>
-        <p class="text-lg mb-20 text-[#4F3527] font-medium">Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision</p>
-        <button class= "bg-[#2B1B12] text-white p-[7px_30px] rounded-lg font-bold hover:bg-[#DDC7BB]"> Sign up</button>
+        <p class="text-lg mb-20 text-[#2B1B12] font-medium">Explore our curated selection of exquisite properties meticulously tailored to your unique dream home vision</p>
+        <button class= "bg-[#2B1B12] text-white p-4 pr-8 px-8 rounded-lg font-bold hover:bg-[#DDC7BB]"> Sign up</button>
     </div>
     
     
     <img src="hero image 1 (1).png" class="w-full h-[1050.84px] object-cover rounded-lg" alt="Dream Home">
     </div>
+
+ 
+<!--Search function-->
+<div class="relative flex items-center justify-center bg-[#DDC7BB] gap-8 p-8 mx-auto w-[70%] md:w-[70%] rounded-2xl transform translate-y-[-250px] shadow-sm">
+
+<div class="relative flex bg-[#FBF5F1] rounded-xl p-4 items-center">
+    <img src="vector (2).png" alt="Location-Icon" class="absolute right-4 pointer-events-none ">
+    <input type="text" placeholder="Location" class="font-bold text-[#2B1B12] placeholder:text-[#2B1B12] bg-[#FBF5F1] focus:outline-none">
+
+</div>
+
+<div class="relative flex bg-[#FBF5F1] rounded-xl p-4 items-center">
+    <img src="Vector.png" alt="Type-Icon" class="absolute right-4">
+    <input type="Text" placeholder="Type" class="font-bold text-[#2B1B12] placeholder:text-[#2B1B12] bg-[#FBF5F1] focus:outline-none">
+</div>
+
+<div class="relative flex bg-[#FBF5F1] rounded-xl p-4 items-center" >
+    <img src="Vector (1).png" alt="Price Range-Icon" class="absolute right-4">
+    <input type="number" placeholder="Price Range" class="font-bold text-[#2B1B12] placeholder:text-[#2B1B12] bg-[#FBF5F1] focus:outline-none">
+</div>
+<button class= "bg-[#2B1B12] text-white p-4 pr-8 px-8 rounded-lg font-bold hover:bg-[#FBF5F1] hover:text-[#2b1b12]" > Sign up</button>
+
+</div>
+
+    
   
 </body>
 </html>
