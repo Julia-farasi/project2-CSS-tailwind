@@ -6,6 +6,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Find your Dream Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <script>
         // tailwind.config.js
         tailwind.config = {
@@ -16,7 +17,9 @@
                 extend: {
                     colors: {
                      'myColor': '#DDC7BB',
-                     'rectangle87':'#FBF5F1'
+                     'rectangle87':'#FBF5F1',
+                     'darkColor':'#2B1B12',
+                     'brightColor':'#FFFFFF'
                      },
                 },
              },
@@ -25,6 +28,63 @@
 </head>
 
 <body>
-    
+    <section>
+        <h2 class="text-3xl text-center font-extrabold font-myFont m-4 p-4">Our Popular Residences</h2>
+        <div class="flex gap-2 items-center justify-center">
+
+            <div class="bg-myColor rounded-xl mx-6 shadow-2xl">
+                <img src="image1.png" class="pb-4 rounded-t-xl">
+                <a href="#">
+                    <div class="flex gap-2 mx-6 font-myFont font-bold text-sm"><img src="location.png" alt="location">San Francisco, California</div>
+                </a>
+                    <div class="flex py-4 mx-4 font-myFont text-sm">  
+                    <div class="flex gap-2 mx-3 "><img class="bg-brightColor" src="rooms.png" alt="location">4 Rooms</div>
+                    <div class="flex gap-2"><img class="bg-brightColor" src="size.png" alt="location">3,500 sq ft</div>
+                </div>    
+                <div class="flex gap-14 py-3 mx-6">
+                    <div>
+                        <button  class="py-1 px-2 bg-darkColor font-myFont text-sm text-brightColor rounded" type="submit"> Sign up</button>
+                    </div>
+                    <div class="font-bold">$2,500,000</div>
+                </div>
+            </div>
+
+            <div class="bg-myColor rounded-xl mx-6 shadow-2xl">
+                <img src="image 2.png" class="pb-4 rounded-t-xl">
+                <a href="#">
+                    <div class="flex gap-2 mx-6 font-myFont font-bold text-sm"><img src="location.png" alt="location">Beverly Hills, California</div>
+                </a>
+                    <div class="flex py-4 mx-4 font-myFont text-sm">  
+                    <div class="flex gap-2 mx-3 "><img class="bg-brightColor" src="rooms.png" alt="location">3 Rooms</div>
+                    <div class="flex gap-2"><img class="bg-brightColor" src="size.png" alt="location">1,500 sq ft</div>
+                </div>    
+                <div class="flex gap-14 py-3 mx-6">
+                    <div>
+                        <button  class="py-1 px-2 bg-darkColor font-myFont text-sm text-brightColor rounded" type="submit"> Sign up</button>
+                    </div>
+                    <div class="font-bold">$850,000</div>
+                </div>
+            </div>
+
+            <div class="bg-myColor rounded-xl mx-6 shadow-2xl">
+                <img src="image3.png" class="pb-4 rounded-t-xl">
+                <a href="#">
+                    <div class="flex gap-2 mx-6 font-myFont font-bold text-sm"><img src="location.png" alt="location">Palo Alto, California</div>
+                </a>
+                    <div class="flex py-4 mx-4 font-myFont text-sm">  
+                    <div class="flex gap-2 mx-3 "><img class="bg-brightColor" src="rooms.png" alt="location">6 Rooms</div>
+                    <div class="flex gap-2"><img class="bg-brightColor" src="size.png" alt="location">4,000 sq ft</div>
+                </div>    
+                <div class="flex gap-14 py-3 mx-6">
+                    <div>
+                        <button  class="py-1 px-2 bg-darkColor font-myFont text-sm text-brightColor rounded" type="submit"> Sign up</button>
+                    </div>
+                    <div class="font-bold">$3,700,000</div>
+                </div>
+            </div>
+
+          
+        </div>
+    </section>
 </body>
 </html>
